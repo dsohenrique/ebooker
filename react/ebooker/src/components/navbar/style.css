@@ -1,0 +1,35 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "center right";
+    background-color: #0073B1;
+    height: 5vh;
+    position: sticky;
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.75);
+}
+
+.logo{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position: absolute;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.search-bar{
+    border-radius: 5px;
+    border:none;
+    height: 3vh;
+    width: 60vw;
+    margin-left: 270px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.shop-cart{
+    grid-area: right;
+    margin-top: 5px;
+    margin-left: 120px;
+}

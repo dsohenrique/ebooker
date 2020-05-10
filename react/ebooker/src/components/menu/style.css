@@ -1,0 +1,17 @@
+.menu{
+    display: inline-grid;
+    background-color: #000;
+    height: 100vh;
+    width: 15vw;
+    grid-row-gap: 5px;
+}
+
+.menu-item:first-child{
+    margin-top: 50px;
+}
+.menu-item{
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    height: 30px;
+}
