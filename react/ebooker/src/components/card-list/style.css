@@ -1,0 +1,17 @@
+@import "../../utils/css/variables.css";
+
+.card-list{
+    background-color: #EEEEEE;
+    height: 100vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: calc(var(--card-height) + 350px);
+    grid-auto-columns: auto;
+}
+
+@media(max-width: 875px){
+    .card-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}

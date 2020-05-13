@@ -1,17 +1,27 @@
+:root{
+    --menu-items-spacing: 40px;
+}
 .menu{
-    display: inline-grid;
+    display: grid;
     background-color: #000;
     height: 100vh;
     width: 15vw;
-    grid-row-gap: 5px;
+    grid-template-rows: var(--menu-items-spacing) var(--menu-items-spacing) var(--menu-items-spacing) var(--menu-items-spacing);
+    grid-row-gap: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.menu-item:first-child{
-    margin-top: 50px;
-}
 .menu-item{
     color: #fff;
-    background-color: red;
     text-align: center;
-    height: 30px;
+    height: var(--menu-items-spacing);
+    text-decoration: none;
+    list-style: none;
+    margin-top: 120px;
+}
+.menu-item:hover{
+    cursor: pointer;
+    transition: background 0.6s;
+    background-color: red;
 }

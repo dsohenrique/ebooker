@@ -2,3 +2,22 @@
 body{
     background-color:#EEEEEE;
 }
+
+.app-container{
+    display: grid;
+    grid-template-areas: "head head head"
+                         "sidemenu content content"
+                         "sidemenu content content";
+}
+
+.navbar{
+    grid-area: head;
+}
+
+.menu{
+    grid-area: sidemenu;
+}
+
+.card-list{
+    grid-area: content;
+}
