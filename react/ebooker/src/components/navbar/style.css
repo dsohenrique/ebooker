@@ -1,11 +1,15 @@
+@import '../../utils/css/variables.css';
+
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "center right";
-    background-color: #0073B1;
+    background-color: var(--ebooker-main);
     height: 5vh;
     position: sticky;
+    top: 0;
     box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.75);
+    z-index: 999;
 }
 
 .logo{
@@ -15,7 +19,15 @@
     border-radius: 100%;
     position: absolute;
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 4%;
+}
+
+@media(max-width: 875px){
+    .logo{
+        height: 60px;
+        width: 60px;
+        margin-left: 4%;
+    }
 }
 
 .search-bar{
@@ -23,7 +35,7 @@
     border:none;
     height: 3vh;
     width: 60vw;
-    margin-left: 270px;
+    margin-left: 40%;
     margin-top: 7px;
     text-align: center;
 }
@@ -31,5 +43,5 @@
 .shop-cart{
     grid-area: right;
     margin-top: 5px;
-    margin-left: 120px;
+    margin-left: 80%;
 }
