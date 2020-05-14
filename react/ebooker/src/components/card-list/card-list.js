@@ -7,7 +7,8 @@ class CardList extends Component{
     constructor(props){
         super(props);
         this.state = {
-            items: []
+            items: [],
+            isStock: false
         };
     }
 
@@ -19,6 +20,7 @@ class CardList extends Component{
                 quantity={item.quantity}
                 price={item.price}
                 isPaused={item.isPaused}
+                isStock={true}
             />
         );
     }

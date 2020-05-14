@@ -1,5 +1,5 @@
 :root{
-    --menu-items-spacing: 40px;
+    --menu-items-spacing: 50px;
 }
 .menu{
     display: grid;
@@ -10,6 +10,9 @@
     grid-row-gap: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .menu-item{
@@ -19,6 +22,7 @@
     text-decoration: none;
     list-style: none;
     margin-top: 120px;
+    position: relative;
 }
 .menu-item:hover{
     cursor: pointer;

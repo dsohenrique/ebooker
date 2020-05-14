@@ -20,4 +20,5 @@ body{
 
 .card-list{
     grid-area: content;
+    position: relative;
 }

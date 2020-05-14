@@ -12,21 +12,22 @@ class Card extends Component {
             name: '',
             quantity: '',
             price: '',
-            isPaused: ''
+            isPaused: '',
+            isStock: false
         };
     }
-    render() {
+    renderCardStock() {
         const isPaused = this.props.isPaused;
         const status = isPaused ? 'PAUSADO' : 'ATIVO';
         const color = isPaused ? '#F3313C' : '#0073B1';
 
         return (
             <div className="card">
-                <Carousel autoPlay showThumbs={false} infiniteLoop>
+                <Carousel className="img" autoPlay showThumbs={false} infiniteLoop>
                     {
                         this.props.images.map(image => {
                             return (
-                                <div className="img">
+                                <div>
                                     <img className="card-img" src={image} alt="img"></img>
                                 </div>
                             );
@@ -37,10 +38,22 @@ class Card extends Component {
                     <p className="card-name">NOME: {this.props.name}</p>
                     <p className="card-quantity">QUANTIDADE: {this.props.quantity}</p>
                     <p className="card-price">PREÇO: {this.props.price}</p>
-                    <p className="card-isPaused">STATUS: {status}</p>
+                    {
+                        this.props.isStock ?
+                        <div>
+                            <p className="card-isPaused">STATUS: {status}</p>
+                            <button className="item-detail">ALTERAR PRODUTO</button>
+                        </div> 
+                        :
+                        <button className="item-detail">VER MAIS DETALHES</button>
+                    }
                 </div>
             </div>
         );
+    }
+
+    render() {
+        return this.renderCardStock();
     }
 }
 

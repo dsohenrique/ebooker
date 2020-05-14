@@ -23,10 +23,9 @@ class  App extends Component{
         <Menu className="menu"
           menuItems={
           [
-            {title: 'item-1', url: 'test'},
-            {title: 'item-1', url: 'test'},
-            {title: 'item-1', url: 'test'},
-            {title: 'item-1', url: 'test'}
+            {title: 'Pedidos', url: 'test'},
+            {title: 'Produtos Cadastrados', url: 'test'},
+            {title: 'Cadastrar novo', url: 'test'},
           ]
         }
         />
